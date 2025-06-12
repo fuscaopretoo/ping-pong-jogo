@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogo do Ping Pong</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+  <button id="botaoIniciar">Iniciar Jogo</button>
+  <button id="botaoReiniciar" style="display:none;">Reiniciar Jogo</button>
+  <canvas id="telaJogo" width="400" height="400">Seu navegador não suporta canvas HTML5.</canvas>
+
+  <div id="painel">
+    <label>
+      Dificuldade:
+      <select id="dificuldade">
+        <option value="0.05">Fácil</option>
+        <option value="0.1" selected>Médio</option>
+        <option value="0.2">Difícil</option>
+      </select>
+    </label>
+    <p>
+      Jogador: <span id="pontosJogador">0</span> |
+      CPU: <span id="pontosCpu">0</span>
+    </p>
+    <p id="mensagemVencedor" style="font-weight:bold; font-size: 18px; margin-top:10px;"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
